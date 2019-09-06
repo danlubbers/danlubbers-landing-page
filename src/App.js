@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './App.scss';
+import Logo from './assets/danlubbers-logo.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  componentDidMount() {
+    AOS.init({duration: 3000});
+  } 
+
+  render() {
+
+    return (
+
+      <div className="App">
+        <img className='logo' src={Logo} alt='logo' />
+          <div className='btn-container'>
+            <a href='http://www.danlubbersphotographs.com'><button className='photoBtn' data-aos='zoom-in'>Photography / Retouching</button></a>
+            <a href='http://webdev.danlubbers.com'><button className='webDevBtn' data-aos='zoom-in'>Web Development</button></a>
+          </div>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -15,10 +15,10 @@ class App extends Component {
     return (
 
       <div className="App">
-        <img className='logo' src={Logo} alt='logo' />
+        <img className='logo' src={Logo} alt='dan lubbers logo' />
           <div className='btn-container'>
-            <a href='http://www.danlubbersphotographs.com'><button className='photoBtn' data-aos='zoom-in'>Photography / Retouching</button></a>
-            <a href='http://webdev.danlubbers.com'><button className='webDevBtn' data-aos='zoom-in'>Web Development</button></a>
+            <a href='http://www.danlubbersphotographs.com' target='_blank' rel='noopener noreferrer'><button className='photoBtn' data-aos='zoom-in'>Photography / Retouching</button></a>
+            <a href='http://webdev.danlubbers.com' target='_blank' rel='noopener noreferrer'><button className='webDevBtn' data-aos='zoom-in'>Web Development</button></a>
           </div>
       </div>
     );

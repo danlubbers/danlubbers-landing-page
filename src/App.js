@@ -14,13 +14,13 @@ class App extends Component {
 
     return (
 
-      <div className="App">
+      <section className="App">
         <img className='logo' src={Logo} alt='dan lubbers logo' />
           <div className='btn-container'>
             <a href='http://www.danlubbersphotographs.com' target='_blank' rel='noopener noreferrer'><button className='photoBtn' data-aos='zoom-in'>Photography / Retouching</button></a>
             <a href='http://webdev.danlubbers.com' target='_blank' rel='noopener noreferrer'><button className='webDevBtn' data-aos='zoom-in'>Web Development</button></a>
           </div>
-      </div>
+      </section>
     );
   }
 }
